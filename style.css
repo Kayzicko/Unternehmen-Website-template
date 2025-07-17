@@ -1,0 +1,96 @@
+/* Basis-Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grundlayout */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #007006;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0754a1;
+  color: white;
+  padding: 2rem;
+}
+
+.profil {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Sektionen */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #0754a1;
+}
+
+/* Liste bei Leistungen */
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links als Buttons */
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #0754a1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background: #053b78;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #007006;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .profil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
